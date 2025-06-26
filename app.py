@@ -11,5 +11,9 @@ def index():
 def add_route(a, b):
     return jsonify({"result": add(a, b)})
 
+@app.route("/subtract/<int:a>/<int:b>")
+def add_route(a, b):
+    return jsonify({"result": subtract(a, b)})
+
 if __name__ == "__main__":
     app.run(debug=True)
