@@ -12,7 +12,7 @@ def add_route(a, b):
     return jsonify({"result": add(a, b)})
 
 @app.route("/subtract/<int:a>/<int:b>")
-def add_route(a, b):
+def subtract_route(a, b):
     return jsonify({"result": subtract(a, b)})
 
 if __name__ == "__main__":
