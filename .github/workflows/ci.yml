@@ -18,5 +18,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt || true
 
-      - name: Run Tests
-        run: python -m unittest discover
+      - name: Run Tests with Covereage
+        run: |
+            pip install coverage
+            coverage run -m unittest discover
+            coverage report
