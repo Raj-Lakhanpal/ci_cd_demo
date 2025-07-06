@@ -22,7 +22,7 @@ class TestMathUtils(unittest.TestCase):
         self.assertEqual(med(digits), 3.0)
     
     def test_bill_after_discount(self):
-        self.assertEqual(bill_after_discount(100), 90)
+        self.assertEqual(bill_after_discount(100, 10), 90)
 
 if __name__ == '__main__':
     unittest.main()
