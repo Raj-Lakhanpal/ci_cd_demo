@@ -1,6 +1,6 @@
 # test_math_utils.py
 import unittest
-from math_utils import add, subtract, divide, med
+from math_utils import add, subtract, divide, med, bill_after_discount
 
 class TestMathUtils(unittest.TestCase):
 
@@ -20,6 +20,9 @@ class TestMathUtils(unittest.TestCase):
     def test_med(self):
         digits=[1,2,3,4,5]
         self.assertEqual(med(digits), 3.0)
+    
+    def test_bill_after_discount(self):
+        self.assertEqual(bill_after_discount(100), 90)
 
 if __name__ == '__main__':
     unittest.main()

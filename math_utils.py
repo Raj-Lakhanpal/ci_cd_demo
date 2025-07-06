@@ -19,3 +19,8 @@ def med(digits):
         counter +=1
         total+=i;
     return  total/counter
+
+
+def bill_after_discount(total_Price, discount_percentage):
+    discount_price = total_Price * (discount_percentage / 100)
+    return  total_Price - discount_price
