@@ -23,6 +23,14 @@ class TestMathUtils(unittest.TestCase):
     
     def test_bill_after_discount(self):
         self.assertEqual(bill_after_discount(100, 10), 90)
+    
+    def test_full_logic_bill_after_discount(self):
+        item_one = 12.99*3
+        item_two = 4.50*2
+        item_three = 1.25
+        total_price = item_one+item_two+item_three
+        final_price = bill_after_discount(total_price, 10)
+        self.assertAlmostEqual(final_price, 20.611, places=2)
 
 if __name__ == '__main__':
     unittest.main()
