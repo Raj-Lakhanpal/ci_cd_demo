@@ -13,10 +13,9 @@ def divide(x, y):
 
 def med(digits):
     counter = 0
-    sum = 0
+    total = 0
 
     for i in digits:
         counter +=1
-        sum+=i;
-    avg = sum/counter
-    return avg
+        total+=i;
+    return  total/counter
