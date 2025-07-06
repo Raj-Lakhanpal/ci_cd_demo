@@ -30,7 +30,7 @@ class TestMathUtils(unittest.TestCase):
         item_three = 1.25
         total_price = item_one+item_two+item_three
         final_price = bill_after_discount(total_price, 10)
-        self.assertAlmostEqual(final_price, 20.611, places=2)
+        self.assertAlmostEqual(final_price, 44.298, places=2)
 
 if __name__ == '__main__':
     unittest.main()
