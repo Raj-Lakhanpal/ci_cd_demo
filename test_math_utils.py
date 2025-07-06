@@ -17,8 +17,8 @@ class TestMathUtils(unittest.TestCase):
         with self.assertRaises(ValueError):
             divide(5, 0)
     
-    def test_med(self):
-        self.assertEqual(med(1,2,3,4,5), 3.0)
+    def test_med(self, digit):
+        self.assertEqual(med(digit=[1,2,3,4,5]), 3.0)
 
 if __name__ == '__main__':
     unittest.main()
