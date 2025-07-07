@@ -34,6 +34,16 @@ class TestMathUtils(unittest.TestCase):
     
     def test_net_profit(self):
         self.assertAlmostEqual(net_profit(100, 10), 90)
+    
+    def test_full_logic_net_profit(self):
+        item_one = 1.50 * 25
+        item_two = 2.50 * 15
+        item_three = 3.50 * 10
+        loss = 12.75
+        total_price = item_one+item_two+item_three
+        profit = net_profit(total_price, loss)
+        self.assertEqual(profit, 97.25, place=2)
+
 
 if __name__ == '__main__':
     unittest.main()
