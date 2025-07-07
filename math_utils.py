@@ -24,3 +24,6 @@ def med(digits):
 def bill_after_discount(total_Price, discount_percentage):
     discount_price = total_Price * (discount_percentage / 100)
     return  total_Price - discount_price
+
+def net_profit(total_sales, loss):
+    return total_sales - loss

@@ -1,6 +1,6 @@
 # test_math_utils.py
 import unittest
-from math_utils import add, subtract, divide, med, bill_after_discount
+from math_utils import add, subtract, divide, med, bill_after_discount, net_profit
 
 class TestMathUtils(unittest.TestCase):
 
@@ -31,6 +31,9 @@ class TestMathUtils(unittest.TestCase):
         total_price = item_one+item_two+item_three
         final_price = bill_after_discount(total_price, 10)
         self.assertAlmostEqual(final_price, 44.298, places=2)
+    
+    def test_net_profit(self):
+        self.assertAlmostEqual(net_profit(100 - 10), 90)
 
 if __name__ == '__main__':
     unittest.main()
