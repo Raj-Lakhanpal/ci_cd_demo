@@ -42,7 +42,7 @@ class TestMathUtils(unittest.TestCase):
         loss = 12.75
         total_price = item_one+item_two+item_three
         profit = net_profit(total_price, loss)
-        self.assertEqual(profit, 97.25, place=2)
+        self.assertEqual(profit, 97.25, places=2)
 
 
 if __name__ == '__main__':
