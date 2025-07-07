@@ -33,7 +33,7 @@ class TestMathUtils(unittest.TestCase):
         self.assertAlmostEqual(final_price, 44.298, places=2)
     
     def test_net_profit(self):
-        self.assertAlmostEqual(net_profit(100 - 10), 90)
+        self.assertAlmostEqual(net_profit(100, 10), 90)
 
 if __name__ == '__main__':
     unittest.main()
